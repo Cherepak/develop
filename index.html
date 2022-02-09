@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+   <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script> <!--  Реакт -->
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script><!--  Реакт -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> <!--  JSX -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="slider.js" defer></script>
+    <script src="./time.js" type="text/babel" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="header ">
+        <div class="d-flex space-between container">
+            <nav>
+                <ul class="d-flex navigator-list">
+                    <li class="navigator-item">
+                        <a href="">Главная</a>
+                    </li>
+                    <li class="navigator-item">
+                        <a href="">Портфолио</a>
+                    </li>
+                    <li class="navigator-item">
+                        <a href="">Услуги</a>
+                    </li>
+                    <li class="navigator-item">
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="d-flex">
+                <img class="logo" src="./image/logo/logo.png" alt="Логотип">
+                <div>
+                    <h1 class="text-center title">
+                        DEVELOP.
+                    </h1>
+                    <p class="text-center">
+                        Разработка сайтов для бизнеса
+                    </p>
+                </div>
+            </div>
+    
+            <div class="d-flex">
+                <address class="adress">
+                    г.Мытищи, ул. 2-ая Институтская 18
+                </address>
+    
+                <ul class=" ">
+                    <li class=" ">
+                        <a href="tel:+79779207740">+7 (977) 920-77-40</a>
+                    </li>
+                    <li class=" ">
+                        <a href="mailto:perec9595@mail.ru">perec9595@mail.ru</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="">
+        <section class="d-flex space-between container container-padding">
+            <h2 class="sr-only">Слайдер</h2>
+            <div id="swiper" class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                      <img class="slider-image" src="./image/I.png" alt="Фотография основателя">
+                  </div>
+                  <div class="swiper-slide">
+                      <img src="./image/logo/logo.png" alt="">
+                  </div>
+                  <div class="swiper-slide">
+                        <img src="./image/logo/logo.png" alt="">
+                  </div>
+                </div>
+                      
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+              </div>
+            <div class="section-my__list">
+                    
+                <p class="section-my__list-my-ontext line-1 anim-typewriter">Мы - специалисты в своем ремесле</p>
+                
+                <p class="section-my__list-my-ontext line-1 anim-typewriter1">Решаем - ваши проблемы</p>
+                
+                <p class="section-my__list-my-ontext line-1 anim-typewriter2">Гарантируем - сроки сдачи проекта и техническую поддержку</p>
+                
+                <div class="perspective">
+                    <h2 class="perspective__title">У вас будет</h2>
+                    <ul class="perspective__list">
+                        <li class="perspective__item">
+                            <p class="">Удобный интерфейс</p>
+                        </li>
+                        <li class="perspective__item">
+                            <p class="">Адаптивность</p>
+                        </li>
+                        <li class="perspective__item">
+                            <p class="">Рабочий функционал</p>
+                        <li class="perspective__item">
+                            <p class="">Современный дизайн</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-step ">
+            <h2 class="sr-only">Этапы проекта</h2>
+            <div class="container container-padding d-flex space-between">
+                <div>
+                    <h2 class="section-step__title">Этапы проекта</h2>
+
+                    <ul>
+                        <li class="d-flex">
+                            <span class="number one">01</span>
+                            <p class="section-step__text">Встреча и оценка</p>
+                        </li>
+                        <li class="d-flex">
+                            <span class="number two">02</span>
+                            <p class="section-step__text">Подписание договора</p>
+                        </li>
+                        <li class="d-flex">
+                            <span class="number three">03</span>
+                            <p class="section-step__text">Разработка структуры</p>
+                        </li>
+                        <li class="d-flex">
+                            <span class="number ">04</span>
+                            <p class="section-step__text">Согласование дизайна</p>
+                        </li>
+                        <li class="d-flex">
+                            <span class="number five">05</span>
+                            <p class="section-step__text">Верстка и разработка</p>
+                        </li>
+                        <li class="d-flex">
+                            <span class="number six">06</span>
+                            <p class="section-step__text">Тестирование</p>
+                        </li>
+                        <li class="d-flex">
+                            <span class="number seven">07</span>
+                            <p class="section-step__text">Принятие заказчиком работы</p>
+                        </li>
+                        <li class="d-flex">
+                            <span class="number eigth">08</span>
+                            <p class="section-step__text">Выкладываем проект в сеть</p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <div id="root">
+
+                    </div>
+                    <div class="code">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="service">
+            <h2 class="Сервис"></h2>
+
+            <div class="container container-padding">
+                <h2 class="text-center">Создание продуктов и оказание услуг</h2>
+
+                <ul class="service__list d-flex space-between">
+                    <li class="service__item">
+                        <p class="text-center ">Сайт визитка</p>
+                        <p class="service__price text-center">От 10 000 рублей</p>
+                    </li>
+                    <li class="service__item">
+                        <p class="text-center">Поддержка сайта</p>
+                        <p class="service__price text-center">От 10 000 рублей</p>
+                    </li>
+                    <li class="service__item">
+                        <p class="text-center">Функциональная доработка</p>
+                        <p class="service__price text-center">От 10 000 рублей</p>
+                    </li>
+                    <li class="service__item">
+                        <p class="text-center">Создание интернет магазина</p>
+                        <p class="service__price text-center">От 50 000 рублей</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="sr-only">Оставить заявку на консультацию</h2>
+            <div class="container container-padding">
+                <h2 class="text-center">Оставить заявку на консультацию</h2>
+
+                <div class="parent">
+                    <form class="send">
+                        <ul>
+                            <li class="send-item">
+                                <label class="send-label text-center">Ваше имя</label>
+                                <input class="send-input" id="name" name="name" type="text" placeholder="Ваше имя">
+                            </li>
+                            <li class="send-item">
+                                <label class="send-label text-center">Ваша почта</label>
+                                <input class="send-input" id="email" name="email" type="text" placeholder="Ваша почта">
+                            </li>
+                            <li class="send-item">
+                                <label class="send-label text-center">Ваш номер телефона</label>
+                                <input class="send-input" id="numberPhone" name="numberPhone" type="number" placeholder="Ваш номер телефона">
+                            </li>
+                            <li class="send-item">
+                                <input id="check" name="check" type="checkbox">
+                                <span>согласие на обработку персональных данных</span>
+                            </li>
+                        </ul>
+                        <input class="sent-button" type="submit" value="Отправить">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container container-padding d-flex space-between">
+            
+            <div class="d-flex">
+                <img class="logo" src="./image/logo/logo.png" alt="Логотип">
+                <div>
+                    <h1 class="text-center footer-title">
+                        DEVELOP.
+                    </h1>
+                    <p class="text-center">
+                        Разработка сайтов для бизнеса
+                    </p>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="d-flex navigator-list">
+                    <li class="navigator-item">
+                        <a href="">Главная</a>
+                    </li>
+                    <li class="navigator-item">
+                        <a href="">Портфолио</a>
+                    </li>
+                    <li class="navigator-item">
+                        <a href="">Услуги</a>
+                    </li>
+                    <li class="navigator-item">
+                        <a href="">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="d-flex">
+                <address class="adress">
+                    г.Мытищи, ул. 2-ая Институтская 18
+                </address>
+    
+                <ul class= " ">
+                    <li class=" ">
+                        <a href="tel:+79779207740">+7 (977) 920-77-40</a>
+                    </li>
+                    <li class=" ">
+                        <a href="mailto:perec9595@mail.ru">perec9595@mail.ru</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
