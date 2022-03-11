@@ -109,6 +109,7 @@ a {
 .header {
     background-color: #fff;
     box-shadow: 0 0 7px #000000ad;
+    padding: 10px 5px;
 }
 
 .navigator-item:not(:last-child) {
@@ -124,6 +125,10 @@ a {
     padding: 30px 0;
 }
 
+/* .main {
+    padding: 10px 5px;
+} */
+
 .section-my__list {
     width: 600px;
    
@@ -136,7 +141,10 @@ a {
 
 }
 
-
+.image-employee {
+    display: block;
+    margin: 0 auto;
+}
 
 .section-my__list-my-ontext {
     font-size: 24px;
@@ -196,6 +204,7 @@ a {
 .section-step {
     background-color: #000000d7;
     color: #fff;
+    padding: 10px 5px;
 }
 
 
@@ -217,14 +226,12 @@ a {
 .send {
     background-color: #fff;
     box-shadow: 0 0 7px #000000ad;
-    border-radius: 5px;
     padding: 10px 25px;
-    width: 12%;
-    margin: 0 auto;
+    
 }
 
 .send-label {
-    font-size: 18px;
+    font-size: 14px;
     display: block;
     margin-bottom: 5px;
 }
@@ -234,10 +241,12 @@ a {
 }
 
 .send-input {
-    box-shadow: 0 0 7px #000000ad;
-    padding: 5px 5px 5px 10px;
+    width: 100%;
+    background-color: #f1f1f1;
+    padding: 15px 5px 15px 10px;
     border-radius: 5px;
     border: none;
+    outline: none;
 }
 
 .sent-button {
@@ -258,9 +267,26 @@ a {
     background-color: #000000bb;
 }
 
+.send-form {
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #fc59d9;
+    color: #fff;
+}
+
+.send-form:hover,
+.send-form:focus {
+    transition: all 400ms;
+    cursor: pointer;
+    color: #fff;
+    background-color: #000000bb;
+}
+
 .footer {
     background-color: #000000d7;
     color: #fff;
+    padding: 10px 5px;
 }
 
 footer a{
@@ -332,10 +358,183 @@ a:focus {
     padding: 15px 15px;
     background-color: #fff;
     width: 50%;
-    height: 100%;
-    margin: 0 auto;
+    height: 60%;
+    margin:  100px auto;
+    font-size: 18px;
+    position: relative;
 }
 
 .serviceList {
     list-style: inherit;
+    padding-left: 10px;
 } 
+
+.close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #f1f1f1;
+    background-image: url("../image/icons/close.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border: none;
+}
+
+.close-button:hover{
+    cursor: pointer;
+    transition: all 400ms;
+    background-color: #6466e2;
+}
+
+.contact {
+    cursor: pointer;
+}
+
+
+
+.blockWhenSize768 {
+    display: none;
+}
+
+@media(max-width: 1440px){
+    .container {
+        max-width: 768px;
+    }
+
+    .d-block {
+        display: block;
+    }
+
+    .logo {
+        display: block;
+        width: 246px;
+        margin: 0 auto;
+    }
+    
+    .header__wrapper  {
+        justify-content: inherit;
+        display: inherit;
+    }
+
+    .blockWhenSize1024 {
+        display: none ;
+    }
+    
+    .blockWhenSize768 {
+        display: inherit;
+    }
+
+    .navigator-list {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .contact__list {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .adress {
+        text-align:  center;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .header__wrapper-adress {
+        margin: 10px 0 10px 0;
+    }
+
+    .size768-text-center {
+        text-align: center;
+    }
+
+    .section-my__list {
+        width: 100%;
+    }
+
+    .section-my__list-my-ontext {
+        font-size: 18px;
+    }
+
+    #swiper {
+        margin: 0 auto;
+        width: 600px;
+    }
+    
+    .image-employee {
+        display: block;
+        width: 200px;
+        margin: 0 auto;
+    }
+
+    .perspective__title {
+        text-align: center;
+    }
+
+    .code {
+        width: 400px;
+        height: 300px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .time {
+        font-size: 34px;
+    }
+
+    .service__item:not(:last-child) {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 700px){
+    .service__list {
+        display: block;
+        margin: 0 auto;
+        width: max-content;
+    }
+}
+
+
+@media(max-width: 425px){
+    .container {
+        width: 315px;
+    }
+
+    #swiper {
+        margin: 0 auto;
+        width: 200px;
+    }
+
+    .title-slider {
+        font-size: 18px;
+    }
+
+    .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper-button-next {
+        display: none;
+    }
+
+    .section-my__list-my-ontext {
+        font-size: 12px;
+    }
+    .code {
+        width: 300px;
+    }
+   
+    .send-form {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .anim-typewriter2 {
+        display: none;
+    }
+
+}
