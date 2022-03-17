@@ -160,8 +160,8 @@ a {
 
 /* Animation */
 .anim-typewriter{
-  animation: typewriter 5s steps(44) 1s infinite normal both,
-             blinkTextCursor 500ms steps(44) infinite  normal;
+  animation: typewriter 5s steps(44) 1s  normal both,
+             blinkTextCursor 500ms steps(44)   normal;
 }
 @keyframes typewriter{
   from{width: 0;}
@@ -173,8 +173,8 @@ a {
 }
 
 .anim-typewriter1{
-    animation: typewriter1 5s steps(44) 1s infinite normal both,
-               blinkTextCursor1 500ms steps(44) infinite  normal;
+    animation: typewriter1 5s steps(44) 1s  normal both,
+               blinkTextCursor1 500ms steps(44)   normal;
   }
   @keyframes typewriter1{
     from{width: 0;}
@@ -186,8 +186,8 @@ a {
   }
 
   .anim-typewriter2{
-    animation: typewriter2 5s steps(44) 1s infinite normal both,
-               blinkTextCursor2 500ms steps(44) infinite  normal;
+    animation: typewriter2 5s steps(44) 1s  normal both,
+               blinkTextCursor2 500ms steps(44)   normal;
   }
   @keyframes typewriter2{
     from{width: 0;}

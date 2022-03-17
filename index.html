@@ -21,6 +21,7 @@
     <script src="./time.js" type="text/babel" defer></script>
     <script src="service.js" defer></script>
     <script src="./contact.js" defer></script>
+    <script src="./sendServer.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -224,7 +225,7 @@
             <h2 class="sr-only">Оставить заявку на консультацию</h2>
             <div class="container container-padding">
                 <div class="parent">
-                    <form class="send" action="server.php">
+                    <form class="send">
                         <h2 class="text-center">Оставить заявку на консультацию</h2>
                         <ul>
                             <li class="send-item">
@@ -243,7 +244,7 @@
                                 <p>Нажимая кнопку "отправить" Вы соглашаетесь на обработку персональных данных</p>
                             </li>
                         </ul>
-                        <input class="send-form" type="submit" value="Отправить">
+                        <input id="send" class="send-form" type="submit" value="Отправить">
                     </form>
                 </div>
             </div>

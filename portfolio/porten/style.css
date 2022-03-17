@@ -1,0 +1,397 @@
+body {
+    font-size: 16px;
+    background-color: #000000;
+    color: #fff;
+}
+
+p {
+    margin: auto;
+}
+
+.sr-only {
+    border: 0; 
+    clip: rect(0 0 0 0); 
+    -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+    height: 1px; 
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+   
+  
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header__wrapper {
+    font-size: 12px;
+    color: #969696;
+    padding: 14px 5px;
+
+}
+
+.header__wrapper a {
+    color: #969696;
+
+}
+
+.slesh {
+
+    margin-right: 10px;
+}
+
+.slesh::after {
+    padding-left: 10px;
+    content: "|";
+}
+
+.header__nav {
+    background-color: #0F0F0F;
+}
+
+.button__nav {
+    font-size: 14px;
+    border: none;
+    padding: 31px 20px;
+    background-color: #0F0F0F;
+    color: #fff;
+}
+
+.button__nav:hover,
+.button__nav:focus {
+    cursor: pointer;
+    background-color: #1F1F1F;
+}
+
+@font-face {
+	font-family: 'BlackOpsOne'; 
+    src: url(./BlackOpsOne-Regular.ttf);}
+
+.logo-text {
+    font-family: "BlackOpsOne";
+    color: #fff;
+   
+}
+
+.header__wrapper-button {
+    border: none;
+    padding: 0;
+    background: none;
+    color: #969696;
+}
+
+
+.section-width-logo {
+    background-image: url("./image/fon1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    padding: 160px 5px;
+}
+
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    width: 320px;
+    margin-bottom: 80px;
+}
+
+.section-width-logo__text {
+    width: 730px;
+    text-align: center;
+}
+
+.section__new-collection {
+
+}
+
+.section__new-collection-wrapper {
+    padding: 40px 80px;
+}
+
+.section__new-collection-item:not(:last-child) {
+    margin-right: 70px;
+}
+
+.procherk {
+    width: 120px;
+    height: 1px;
+    background-color: #fff;
+    margin: 50px auto;
+}
+
+.section__new-collection-image {
+    background-color: #191B1C;
+    margin-bottom: 50px;
+}
+
+.section__new-collection-wrap {
+    width: 100%;
+    background-image: url("./image/fon2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.catalog-button {
+    padding: 12px 28px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #fff;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+}
+
+.section__new-collection-wrap-margin {
+    margin-top: 35%;
+}
+
+.fon3 {
+    background-image: url("./image/fon3.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 800px;
+}
+
+.section-collection2018__article {
+    padding: 100px 0;
+    width: 1040px;
+}
+
+.section-collection2018__text {
+    width: 470px;
+    margin-bottom: 10px;
+}
+
+.new-product-item:not(:nth-child(4n)) {
+    margin-right: 20px;
+}
+
+.new-product-item {
+    margin-bottom: 40px;
+}
+
+.new-product-image {
+    padding: 55px 22px;
+    background-color: #191B1C;
+}
+
+.new-product-text {
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.section-brend {
+    padding: 60px 5px;
+    background-color: #0F0F0F;
+}
+
+.section-brend__item {
+    margin-right: 30px;
+}
+
+.footer {
+    background-image: url("./image/fon4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 5px;
+}
+
+.footer-article {
+    width: 350px;
+}
+
+.footer-wrapper {
+    width: 350px;
+}
+
+.footer-item {
+    padding: 10px 20px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 20px;
+}
+
+.footer-form {
+    width: 350px;
+}
+
+.input-wrapper {
+    margin-top: 20px;
+}
+
+.input {
+    padding: 5px 15px 5px 5px;
+}
+
+.button-input {
+    padding: 5px 10px;
+}
+
+.marginright:not(:last-child) {
+    margin-right: 30px;
+}
+
+@media(max-width:1200px){
+    .new-product-item:not(:nth-child(4n)) {
+        margin-right: 0;
+    }
+
+    .new-product-item:not(:nth-child(3n)) {
+        margin-right: 30px;
+    }
+
+    .wrap {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .section__new-collection-item:not(:last-child) {
+        margin-right: 0;
+    }
+}
+
+@media(max-width:982px){
+    .new-product-item:not(:nth-child(4n)) {
+        margin-right: 0;
+    }
+
+    .new-product-item:not(:nth-child(3n)) {
+        margin-right: 0px;
+    }
+
+    .new-product-item:not(:nth-child(2n)) {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:766px){
+    .new-product-item:not(:nth-child(4n)) {
+        margin-right: 0;
+    }
+
+    .new-product-item:not(:nth-child(3n)) {
+        margin-right: 0;
+    }
+
+    .new-product-item:not(:nth-child(2n)) {
+        margin-right: 0;
+    }
+
+    .section-collection2018 {
+        justify-content: center;
+    }
+
+    .section-collection2018__article {
+        width: 320px;
+    }
+    .section-collection2018__text {
+        width: 200px;
+    }
+
+    .fon3 {
+        width: 320px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .button__nav {
+        font-size: 12px;
+    }
+
+    .section-width-logo__text {
+        width: 320px;
+    }
+
+    .header__nav-wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@media(max-width:585px){ 
+    .header__wrapper {
+        font-size: 6px;
+    }
+
+    .header__nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .button__nav {
+        font-size: 8px;
+    }
+
+    .logo {
+        width: 210px;
+    }
+    
+    .section-width-logo__text {
+        width: 210px;
+    }
+
+    .section__new-collection {
+        flex-wrap: wrap;
+    }
+
+    .fon3 {
+        display: none;
+    }
+
+    .footer-wrapper-main {
+        flex-wrap: wrap;
+    }
+
+    .marginright {
+        margin: 0;
+    }
+
+    .footer-form {
+        width: 300px;
+    }
+
+    .footer-wrapper {
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    .footer-article {
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    .section__new-collection-wrapper {
+        padding: 40px 28px;
+    }
+
+    .footer-article h2 {
+        text-align: center;
+    }
+
+    .footer-wrapper h2 {
+        text-align: center;
+    }
+
+    .footer-form h2{
+        text-align: center;
+    }
+
+    .input-wrapper {
+        margin: 0 auto;
+        width: 210px;
+    }
+}
