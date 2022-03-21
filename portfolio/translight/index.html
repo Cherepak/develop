@@ -14,13 +14,13 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="header__nav-wrapper d-flex">
             <div class="logo__wrapper">
                 <img class="logo" src="./image/logo.png" alt="Logo">
             </div>
             <nav class="nav">
-                <ul class="d-flex list">
+                <ul class="list ">
                     <li class="item">О компании</li>
     
                     <li class="item">Портфолио</li>
@@ -56,13 +56,13 @@
 
             </div>
         </div>
-    </header> -->
+    </header>
 
     <main class="main">
-        <!-- <section class="project-section container">
+        <section class="project-section container">
             <h2 class="sr-only">НАШИ ПРОЕКТЫ</h2>
-            <div class="d-flex justify-content-between">
-                <div class="block-for-line d-flex align-items-center">
+            <div class="d-flex ">
+                <div class=" d-flex align-items-center block-for-line">
                     <div class="line-wrapper">
                         <span class="big-line"> </span>
                         <span class="smoke-line"></span>
@@ -90,12 +90,12 @@
                     </div>
                 </li>
             </ul>
-        </section> -->
+        </section> 
 
         <section class="catalog-section container">
             <h2 class="sr-only">КАТАЛОГ ПРОДУКЦИИ</h2>
           
-                <div class="block-for-line d-flex align-items-center">
+                <div class=" d-flex align-items-center block-for-line">
                     <div class="line-wrapper">
                         <span class="big-line"> </span>
                         <span class="smoke-line"></span>
@@ -109,7 +109,7 @@
                         <button class="catalog-section__button">COMPULITE</button>
                     </div>
                     
-                    <ul class="d-flex justify-content-between">
+                    <ul class="d-flex catalog-section__list ">
                         <li class="catalog-section__item staticapparat">
                             <p class="catalog-section__item-text">Статичные светодиодные приборы</p>
                         </li>
@@ -126,7 +126,7 @@
         <section class="container arenda-section">
             <h2 class="sr-only">АРЕНДА ОБОРУДОВАНИЯ</h2>
           
-                <div class="block-for-line d-flex align-items-center">
+                <div class=" d-flex align-items-center block-for-line">
                     <div class="line-wrapper">
                         <span class="big-line"> </span>
                         <span class="smoke-line"></span>
@@ -134,8 +134,8 @@
                     <h2>АРЕНДА ОБОРУДОВАНИЯ</h2>
                 </div>
                 
-                <article>
-                    <div>
+                <article class="d-flex arenda-section__content-wrapper align-items-center ">
+                    <div class="arenda-section__content-text">
                         <p>
                             Мы занимаемся прокатом светового и сценического оборудования
                             ведущих мировых производителей, таких как Robe, SGM, StudioDue, 
@@ -144,41 +144,136 @@
                         </p>
                     </div>
 
-                    <div>
-                        <div>
-                            <h3>Новое оборудование, предоставляемое в аренду:</h3>
+                    <div class="arenda-section__content">
+                        <div class="d-flex align-items-center">
+                            <h3 class="arenda-section__content-title">Новое оборудование, предоставляемое в аренду:</h3>
 
                             <div class="catalog-section__wrapper-with-button  d-flex justify-content-center">
-                                <button class="catalog-section__button">ROBE</button>
-                                <button class="catalog-section__button">COMPULITE</button>
+                                <button class="left-button"></button>
+                                <button class="right-button"></button>
                             </div>
                         </div>
 
-                        <div>
-                            <img src="./image/аксессуар.jpg" alt="Оборудование">
-                        </div>
-
-                        <div>
-                            <h3>Robe Robin ParFect 100</h3>
-                            
-                            <ul>
-                                <li>
-                                    Источник света 12 светодиодов RGBW по 15 Вт каждый
-                                </li>
-                                <li>
-                                    Угол раскрытия 7 градусов
-                                </li>
-                                <li>
-                                    В комплекте рассеивающая линза 40 градусов
-                                </li>
-                                <li>
-                                    Потребляемая мощность 200 Вт
-                                </li>
-                            </ul>
+                        <div class="d-flex justify-content-center justify-content-between">
+                            <div>
+                                <img class="arenda-section__content-image" src="./image/аксуссуар2.jpg" alt="Оборудование">
+                            </div>
+    
+                            <div>
+                                <h4>Robe Robin ParFect 100</h4>
+                                
+                                <ul class="arenda-section__content-list">
+                                    <li class="arenda-section__content-item">
+                                        Источник света 12 светодиодов RGBW по 15 Вт каждый
+                                    </li>
+                                    <li class="arenda-section__content-item">
+                                        Угол раскрытия 7 градусов
+                                    </li>
+                                    <li class="arenda-section__content-item">
+                                        В комплекте рассеивающая линза 40 градусов
+                                    </li>
+                                    <li class="arenda-section__content-item">
+                                        Потребляемая мощность 200 Вт
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </article>
         </section>
+
+        <section class="container news-section">
+            <h2 class="sr-only">НОВОСТИ</h2>
+          
+                <div class=" d-flex align-items-center block-for-line">
+                    <div class="line-wrapper">
+                        <span class="big-line"> </span>
+                        <span class="smoke-line"></span>
+                    </div>
+                    <h2>НОВОСТИ</h2>
+                </div>
+
+                <ul class= "news-section__list d-flex">
+                    <li class="news-section__item news-section__item__modif d-flex justify-content-between">
+                        <img class="news-section__image-title" src="./image/new1.jpg" alt="Новость">
+
+                        <article class="news-section__article">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <h3 class="news-section__title">Семинар Milos</h3>
+                                <time datetime="2019-01-27">
+                                    27.01.2019
+                                </time>
+                            </div>
+
+                            <p class="news-section__text-title">
+                                Наши сотрудники прошли последний семинар от компании 
+                                Milos. Они получили новый объем знаний, 
+                                который позволит нашей компании заниматься 
+                                оборудованием не только мероприятий, но 
+                                производственных помещений.
+                            </p>
+
+                            <p class="news-section__link">Читать полностью...</p>
+                        </article>
+                    </li>
+
+                    <li class="news-section__item">
+                        <h3 class="news-section__title">Выставка Prolight+Sound NAMM Russia 2016</h3>
+
+                        <p>30 контрактов, тысячи восторженных посетителей...</p>
+
+                        <div class="align-items-baseline d-flex justify-content-between">
+                            <img class="news-section__image" src="./image/new2.jpg" alt="Новость">
+
+                            <time datetime="2019-01-27">
+                                27.01.2019
+                            </time>
+                        </div>
+                    </li>
+
+                    <li class="news-section__item ">
+                        <h3 class="news-section__title">Семинар Robe</h3>
+
+                        <p>30 января 2017 года наши сотрудники побывали в Берлине..</p>
+
+                        <div class="align-items-baseline d-flex justify-content-between">
+                            <img class="news-section__image" src="./image/new3.jpg" alt="Новость">
+
+                            <time datetime="2019-01-27">
+                                27.01.2019
+                            </time>
+                        </div>
+                    </li>
+                </ul>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class=" container">
+            <div class="footer__wrapper d-flex justify-content-between">
+                <a href="tel:+7(812)7108025">(812) 710-80-25</a>
+                
+                <p>191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1</p>
+
+                <a href="mailto:mail@translight.ru">mail@translight.ru</a>
+            </div>
+
+            <div class="footer__wrapper">
+                <ul class="footer__wrapper-list d-flex flex-wrap">
+                    <li class="footer__wrapper-item">О компании</li>
+                    <li class="footer__wrapper-item">Каталог</li>
+                    <li class="footer__wrapper-item">Наши проекты</li>
+                    <li class="footer__wrapper-item">Новости</li>
+                    <li class="footer__wrapper-item">Аренда</li>
+                    <li class="footer__wrapper-item">Сервисное обслуживание</li>
+                </ul>
+            </div>
+    
+            <div class="footer__wrapper footer__wrapper__modificate d-flex justify-content-between">
+                <p>© 2019 ЗАО «Транслайт». Все права защищены.</p>
+                <p>Разработка и дизайн - D-e-n.ru</p>
+            </div>
+        </div>        
+    </footer>
 </body>
 </html>

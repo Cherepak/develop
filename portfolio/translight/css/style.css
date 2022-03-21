@@ -27,7 +27,7 @@ body {
  
 
 ul {
-    padding: 0!important;
+    padding: 0;
     list-style: none;
     margin: 0;
 }
@@ -62,6 +62,7 @@ a {
 }
 
 .list {
+    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -110,7 +111,7 @@ a {
 }
 
 .main {
-    padding: 156px;
+    padding: 5px;
 }
 
 .line-wrapper {
@@ -153,7 +154,12 @@ a {
     height: 55px;
 }
 
+.project-section {
+    margin-top: 70px;
+}
+
 .project-section__content-list {
+    padding: 0;
     margin-top: 70px;
     margin-bottom: 150px;
 }
@@ -217,6 +223,10 @@ a {
     background-image: url("../image/аксессуар.jpg");
 }
 
+.catalog-section__list {
+    justify-content: space-between;
+}
+
 .catalog-section__item {
     width: 350px;
     background-repeat: no-repeat;
@@ -239,5 +249,322 @@ a {
 }
 
 .arenda-section {
+    margin-bottom: 108px;
+}
+
+.arenda-section__content {
+    padding: 30px;
+    border: 3px solid #005BC1;
+}
+
+.arenda-section__content-wrapper {
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.arenda-section__content-text {
+    width: 350px;
+}
+
+.arenda-section__content-title {
+    font-size: 21px;
+}
+
+
+
+.arenda-section__content-image {
+    width: 255px;
+}
+
+.arenda-section__content-list {
+    padding-left: 30px;
+    margin-top: 30px;
+    list-style: outside;
+}
+
+.arenda-section__content-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.news-section__list {
+    margin-top: 70px;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.news-section__image-title {
+    width: 255px;
+    font-size: 14px;
+}
+
+.news-section__article {
+    margin-left: 30px;
+}
+
+.news-section__title {
+    font-size: 18px;
+}
+
+.news-section__text-title {
+    width: 255px;
+}
+
+.news-section__image {
+    width: 128px;
+}
+
+.news-section__link {
+    border-bottom: 1px solid #000;
+}
+
+.news-section__link:hover,
+.news-section__link:focus {
+    cursor: pointer;
+    color: #005BC1;
+    border-bottom: 1px solid #005BC1;
+}
+
+.news-section__item {
+    display: grid;
+}
+
+.news-section__item:not(:last-child) {
+    margin-right: 60px;
+}
+
+.footer {
+    color: #fff;
+    background-color: #005BC1;
+
+}
+
+
+.footer a{
+    color: #fff;
+}
+
+.footer__wrapper:not(:last-child) {
+    padding: 30px 0;
+    border-bottom: 1px solid #fff;
+}
+
+.footer__wrapper-list {
+    padding: 0;
+}
+
+.footer__wrapper-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.footer__wrapper__modificate {
+    padding-top: 30px;
+}
+
+.project-section div {
+    justify-content: space-between;
+}
+
+@media(max-width: 1280px) {
+    .news-section__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+/* 
+    .news-section__image-title {
+        width: 150px;
+    }
+
+    .news-section__text-title {
+        width: 150px;
+    }
+*/
+    .news-section__item {
+        width: 350px;
+        padding: 10px;
+        margin-bottom: 60px;
+        border: 1px solid #005BC1;
+    } 
+
+    .news-section__item__modif {
+        width: 650px;
+    }
+
+    .catalog-section__wrapper-with-button .left-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .catalog-section__wrapper-with-button .right-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .project-section__content {
+        padding: 200px 4px 11px 135px;
+    }
+
+    .catalog-section__item {
+        width: 245px;
+    }
+}
+
+@media(max-width:1024px) {
+    .item {
+        font-size: 14px;
+    }
+
+    .header-line {
+        width: 285px;
+        left: -20px;
+    }
+
+    .left-button {
+        width: 30px;
+        height: 30px;
+    }
+
+    .right-button {
+        width: 30px;
+        height: 30px;        
+    }
+
+    .project-section__content-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .project-section__content:not(:last-child) {
+        margin-bottom: 30px;
+        margin-right: 0;
+    }
+
+    .catalog-section__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .catalog-section__item {
+        width: 100%;
+
+    }
+    .catalog-section__item:not(:last-child) {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .arenda-section__content-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .arenda-section__content-item {
+        font-size: 12px;
+    }
+
+    .arenda-section__content-image {
+        width: 150px;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:768px) {
+    .header__nav-wrapper {
+        padding-top: 170px;
+    } 
+
+    .list {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .item:not(:last-child) {
+        margin: 0;
+    }
     
+    .logo__wrapper {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        top: 0; left: 0; bottom: 0; right: 0;
+    }
+
+    .title  {
+        text-align: center;
+    }
+
+    .header-content__text {
+        text-align: center;
+    }
+
+    .header-content__button {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .header-line {
+        display: none;
+    }
+
+    .project-section .left-button,
+    .project-section .right-button{
+        display: none;
+    }
+
+    .header-content {
+        width: 300px;
+    }
+
+    .catalog-section__wrapper-with-button .left-button,
+    .catalog-section__wrapper-with-button .right-button {
+        display: none;
+    }
+
+    .news-section__item:not(:last-child) {
+        margin: 0 0 30px 0;
+    }
+
+    .news-section__item__modif {
+        flex-wrap: wrap;
+    }
+
+    .news-section__image-title {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .arenda-section__content {
+        padding: 5px;
+    }
+
+    .news-section__text-title {
+        width: inherit;
+    }
+
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .block-for-line .line-wrapper {
+        display: none;
+    }
+
+    .line-wrapper {
+        margin: 0 auto;
+    }
+
+    .block-for-line {
+        justify-content: center;
+    }
+
+    .block-for-line h2 {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .project-section div {
+        justify-content: center;
+    }
 }
