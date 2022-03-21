@@ -1,0 +1,243 @@
+﻿@font-face {
+    font-family: "Oswald";
+    src: url(../Oswald-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: 'Oswald';
+    font-size: 14px;
+    color: #000;
+    background: #ffffff;
+}
+
+ 
+.sr-only {
+  border: 0; 
+  clip: rect(0 0 0 0); 
+  -webkit-clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  clip-path: polygon(0px 0px, 0px 0px, 0px 0px);
+  height: 1px; 
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+ 
+
+ul {
+    padding: 0!important;
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header {
+    background-image: url("../image/fon1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    position: relative;
+}
+
+.logo__wrapper {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 40px;
+}
+
+.logo {
+    width: 140px;
+}
+
+.nav {
+    margin: 0 auto;
+    /* padding: 30px 0; */
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}
+
+.item:not(:last-child) {
+    margin-right: 26px;
+}
+
+.header__nav-wrapper {
+    padding: 30px 5px;
+    background-color: #005bc199;
+    position: relative;
+}
+
+.header-line {
+    position: absolute;
+    background-color: #005bc199;
+    width: 444px;
+    height: 100%;
+    left: -200px;
+    z-index: 1;
+    top: 0;
+}
+
+.header-content {
+    position: relative;
+    padding: 282px 0 200px 0;
+    margin: 0 auto;
+    width: 635px;
+}
+
+.header-content__wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.header-content__text {
+    margin: 40px 0;
+}
+
+.header-content__button {
+    background: none;
+    color: #ffffff;
+    border: 1px solid #fff;
+    padding: 15px 40px;
+}
+
+.main {
+    padding: 156px;
+}
+
+.line-wrapper {
+    margin-right: 40px;
+}
+
+.big-line {
+    display: block;
+    border-bottom: 1px solid #005BC1;
+    width: 100px;
+    height: 1px;
+    margin-bottom: 13px;
+}
+
+.smoke-line {
+    display: block;
+    border-bottom: 1px solid #005BC1;
+    width: 50px;
+    height: 1px;
+    margin-right: auto;
+}
+
+.left-button {
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ffffff;
+    background-image: url('../image/left.png');
+    width: 55px;
+    height: 55px;
+}
+
+.right-button {
+    border: none;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #ffffff;
+    background-image: url('../image/right.png');
+    width: 55px;
+    height: 55px;
+}
+
+.project-section__content-list {
+    margin-top: 70px;
+    margin-bottom: 150px;
+}
+
+.project-section__content {
+    padding: 255px 55px 55px 255px;
+}
+
+.project-section__content:not(:last-child) {
+    margin-right: 30px;
+}
+
+.contentimageone {
+    background-image: url("../image/contentimageone.jpg");
+}
+
+.contentimagetwo {
+    background-image: url("../image/contentimagetwo.jpg");
+}
+
+.project-section__content-wrapper {
+    padding: 20px 25px;
+    background-color: #ffffff;
+}
+
+.catalog-section {
+    margin-bottom: 150px;
+}
+
+.catalog-section__wrapper-with-button {
+    margin: 70px auto 55px auto;
+}
+
+.catalog-section__button {
+    background:none;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.catalog-section__button:not(:last-child) {
+    margin-right: 47px;
+}
+
+.catalog-section__button:hover,
+.catalog-section__button:focus {
+    transition: all 400ms;
+    cursor: pointer;
+    border-bottom: 1px solid #005BC1;
+    color: #005BC1;
+}
+
+.staticapparat {
+    background-image: url("../image/staticapparate.jpg");
+}
+
+.controller {
+    background-image: url("../image/control.jpg");
+}
+
+.accessory {
+    background-image: url("../image/аксессуар.jpg");
+}
+
+.catalog-section__item {
+    width: 350px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 200px 0 15px 85px;
+    
+}
+
+/* .catalog-section__item:not(:last-child) {
+    margin-right: 30px;
+} */
+
+.catalog-section__item-text {
+    margin-left: auto;
+    margin-bottom: 30px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #005BC1;
+    padding: 15px 21px;
+}
+
+.arenda-section {
+    
+}
