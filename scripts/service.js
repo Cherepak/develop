@@ -3,6 +3,7 @@ const aboutServers = document.getElementById("aboutServers");
 const aboutFunctionUpgrate = document.getElementById("aboutFunctionUpgrate");
 const aboutMarket = document.getElementById("aboutMarket");
 
+
 aboutVisitka.addEventListener("click", function () {
     const wrapper = document.createElement("div");
     wrapper.setAttribute("class", "wrapperAboutService");
@@ -290,3 +291,4 @@ aboutMarket.addEventListener("click", function () {
     content.append(exit);
     document.body.append(wrapper);
 });
+

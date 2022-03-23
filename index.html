@@ -13,15 +13,12 @@
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src= "./slider.js" defer></script>
-    <script src="./time.js" type="text/babel" defer></script>
-    <script src="service.js" defer></script>
-    <script src="./contact.js" defer></script>
-    <script src="./sendServer.js" defer></script>
+    <script src= "./scripts/slider.js" defer></script>
+    <script src="./scripts/service.js" defer></script>
+    <script src="./scripts/contact.js" defer></script>
+    <script src="./scripts/sendServer.js" defer></script>
+    <script src="./scripts/portfolio.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -34,6 +31,9 @@
                     </li>
                     <li class="navigator-item">
                         <a href="#service">Услуги</a>
+                    </li>
+                    <li class="navigator-item">
+                        <a href="#portfolio">Порфтолио</a>
                     </li>
                     <li class="navigator-item">
                         <a class="contact">Контакты</a>
@@ -89,18 +89,15 @@
             <h2 class="sr-only">Слайдер</h2>
             <div id="swiper" class="swiper ">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                      <img class="image-employee" class="slider-image" src="./image/I.png" alt="Фотография основателя">
-                      <p class="title-slider">Технический директор и разработчик студии</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <img class="image-employee" src="./image/logo/logo.png" alt="">
-                      <p class="title-slider">Технический директор и разработчик студии</p>
-                  </div>
-                  <div class="swiper-slide">
-                      <img class="image-employee"  src="./image/logo/logo.png" alt="">
-                      <p class="title-slider">Технический директор и разработчик студии</p>
-                      </div>
+                    <div class="swiper-slide">
+                        <img class="image-employee" src="./image/slider/1.jpg" alt="Изображение сайта">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="image-employee" src="./image/slider/2.jpg" alt="Изображение сайта">
+                    </div>
+                    <div class="swiper-slide">
+                        <img class="image-employee"  src="./image/slider/3.jpg" alt="Изображение сайта">
+                    </div>
                 </div>
                       
                 <div class="swiper-button-prev"></div>
@@ -176,9 +173,7 @@
                     </ul>
                 </div>
                 <div>
-                    <div id="root">
-
-                    </div>
+                   
                     <div class="code">
 
                     </div>
@@ -216,6 +211,28 @@
                         <p class="text-center">Корпоративный сайт компании</p>
                         <p class="service__price text-center">От 50 000 рублей</p>
                         <button class="sent-button" id="aboutMarket">Подробнее</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2 class="sr-only">Портфолио</h2>
+            <div class="container">
+                <h2 class="text-center">Портфолио</h2>
+            
+                <ul class="">
+                    <li class="portfolio__item">
+                        <button id="clothes" class="portfolio__button">Одежда</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <button id="construction" class="portfolio__button">Строительство</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <button id="insurance" class="portfolio__button">Страхование</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <button id="production" class="portfolio__button">Производство</button>
                     </li>
                 </ul>
             </div>
@@ -272,6 +289,9 @@
                     </li>
                     <li class="navigator-item">
                         <a href="#service">Услуги</a>
+                    </li>
+                    <li class="navigator-item">
+                        <a href="#portfolio">Порфтолио</a>
                     </li>
                     <li class="navigator-item">
                         <a class="contact">Контакты</a>

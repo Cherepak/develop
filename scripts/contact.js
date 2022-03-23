@@ -1,7 +1,5 @@
 let button = document.querySelectorAll(".contact");
 
-console.log(button);
-
 button.forEach((item)=> {
     item.addEventListener("click", () => {
     
